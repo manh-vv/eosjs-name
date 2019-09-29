@@ -1,15 +1,22 @@
 {
-  "name": "eosjs-name",
-  "version": "1.0.1",
+  "name": "eosjs-account-name",
+  "version": "1.0.0",
   "description": "eos name in string to uint64 and vice versa",
   "main": "index.js",
   "author": "manh.vv.htth@gmail.com",
   "license": "MIT",
   "repository": "https://github.com/manh-vv/eosjs-name.git",
+  "keywords": [
+    "eosio account name",
+    "eosio name",
+    "eos name",
+    "account_name"
+  ],
   "dependencies": {
     "cuint": "^0.2.2"
   },
   "devDependencies": {
+    "eosjs-name": "^1.0.2",
     "jest": "^24.9.0"
   },
   "scripts": {
