@@ -16,7 +16,6 @@
     "cuint": "^0.2.2"
   },
   "devDependencies": {
-    "eosjs-account-name": "^1.0.0",
     "jest": "^24.9.0"
   },
   "scripts": {
