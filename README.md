@@ -26,3 +26,7 @@ think node developer should have this function too :).
 ---- 6138663587900751872
 ---- 6138663591592764928
 ```
+
+## From uint64 to name
+
+Source https://github.com/EOSIO/eos/blob/master/libraries/chain/name.cpp#L19

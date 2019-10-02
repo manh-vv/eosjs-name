@@ -15,19 +15,34 @@ function char_to_symbol(c) {
  */
 exports.nameToUint64 = (str) => {
   let name = UINT64(0);
+
   for (let i = 0; i < 12; i++) {
     // NOTE: char_to_symbol() returns char type, and without this explicit
     // expansion to uint64 type, the compilation fails at the point of usage
     // of string_to_name(), where the usage requires constant (compile time) expression.
-    name = name.or(char_to_symbol(str[i]).and(UINT64(0x1f)).shiftl(64 - 5 * (i + 1)));
+    name.or(char_to_symbol(str[i]).and(UINT64(0x1F)).shiftl(64 - 5 * (i + 1)));
   }
 
   // The for-loop encoded up to 60 high bits into uint64 'name' variable,
   // if (strlen(str) > 12) then encode str[12] into the low (remaining)
   // 4 bits of 'name'
-  if (str[12])
-    name = name.or(char_to_symbol(str[12]).adn(UINT64(0x0F)));
-  return name.toString();
+  if (str[12]) name.or(char_to_symbol(str[12]).and(UINT64(0x0F)));
+
+  return name.toString(10);
 };
 
-exports.uint64ToName = (s) => 'TODO';
+const charMap = '.12345abcdefghijklmnopqrstuvwxyz';
+
+exports.uint64ToName = (value) => {
+  const str = [];
+
+  let tmp = UINT64(value);
+  for (let i = 0; i <= 12; ++i) {
+    const idx = tmp.clone().and(UINT64(i === 0 ? 0x0F : 0x1F)).toNumber();
+
+    str[12 - i] = charMap[idx];
+    tmp = tmp.shiftr(i === 0 ? 4 : 5);
+  }
+
+  return str.join('').replace(/\.+$/g, '');
+};
