@@ -1,6 +1,6 @@
 {
   "name": "eosjs-account-name",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "eos name in string to uint64 and vice versa",
   "main": "index.js",
   "author": "manh.vv.htth@gmail.com",
