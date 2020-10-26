@@ -1,7 +1,13 @@
-const { UINT64 } = require('cuint');
+exports.char_to_symbol = (c) => {
+  if (typeof c == 'string') c = c.charCodeAt(0);
 
-exports.char_to_symbol = function char_to_symbol(c) {
-  if (c >= 'a' && c <= 'z') return UINT64(c.charCodeAt(0) - 'a'.charCodeAt(0) + 6);
-  if (c >= '1' && c <= '5') return UINT64(c.charCodeAt(0) - '1'.charCodeAt(0) + 1);
-  return UINT64(0);
+  if (c >= 'a'.charCodeAt(0) && c <= 'z'.charCodeAt(0)) {
+    return c - 'a'.charCodeAt(0) + 6;
+  }
+
+  if (c >= '1'.charCodeAt(0) && c <= '5'.charCodeAt(0)) {
+    return c - '1'.charCodeAt(0) + 1;
+  }
+
+  return 0;
 };
