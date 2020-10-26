@@ -2,6 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/eosjs-account-name.svg)](https://www.npmjs.org/package/eosjs-account-name)
 [![Build Status](https://travis-ci.org/manh-vv/eosjs-name.svg?branch=master)](https://travis-ci.org/manh-vv/eosjs-name)
+[![codecov](https://codecov.io/gh/manh-vv/eosjs-name/branch/master/graph/badge.svg?token=WLVN5CZT6Q)](https://codecov.io/gh/manh-vv/eosjs-name)
 
 ```sh
 npm i eosjs-account-name
