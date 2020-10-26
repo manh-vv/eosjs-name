@@ -4,6 +4,8 @@
 [![Build Status](https://travis-ci.org/manh-vv/eosjs-name.svg?branch=master)](https://travis-ci.org/manh-vv/eosjs-name)
 [![codecov](https://codecov.io/gh/manh-vv/eosjs-name/branch/master/graph/badge.svg?token=WLVN5CZT6Q)](https://codecov.io/gh/manh-vv/eosjs-name)
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/manh-vv/eosjs-name)
+
 ```sh
 npm i eosjs-account-name
 ```
