@@ -4,6 +4,12 @@ node_js:
   - '10'
 cache:
   yarn: true
+install:
+  - yarn
+  - npm install -g codecov
+script:
+  - yarn test --coverage
+  - codecov
 deploy:
   provider: npm
   email: manh.vv.htth@gmail.com
