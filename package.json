@@ -16,9 +16,7 @@
     "account_name",
     "symbol name"
   ],
-  "dependencies": {
-    "cuint": "^0.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "husky": "^4.3.0",
     "jest": "^26.6.1",
