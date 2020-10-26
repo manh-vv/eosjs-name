@@ -16,8 +16,7 @@ yarn add eosjs-account-name
 
 ## From name to uint64
 
-Here is [how eosio account name is computed to uint64]
-(https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/name.hpp#L21), I
+Here is [how eosio account name is computed to uint64](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/name.hpp#L21), I
 think node developer should have this function too :).
 
 [main.cpp](./examples/main.cpp) show how sample values are created.
@@ -47,4 +46,14 @@ const n = eosjsAccountName.nameToUint64('eosio');
 console.log('eosio to uint64: ' + n);
 
 console.log('uint64 to name: ' + eosjsAccountName.uint64ToName(n));
+```
+
+## Note on random eosio name
+
+In case you want to generate a random name, I suggest you use [`nanoid`](https://zelark.github.io/nano-id-cc/).
+
+```javascript
+const generate = require('nanoid/generate');
+const alphabet = '.12345abcdefghijklmnopqrstuvwxyz';
+generate(alphabet, 12); //=> "nc4zs1yyg.jx"
 ```
