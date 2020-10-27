@@ -40,12 +40,29 @@ Source https://github.com/EOSIO/eos/blob/master/libraries/chain/name.cpp#L19
 Try on run-kit https://npm.runkit.com/eosjs-account-name
 
 ```javascript
-const eosjsAccountName = require("eosjs-account-name")
+const eosjsAccountName = require('eosjs-account-name');
 const n = eosjsAccountName.nameToUint64('eosio');
 
 console.log('eosio to uint64: ' + n);
 
 console.log('uint64 to name: ' + eosjsAccountName.uint64ToName(n));
+```
+
+### Parse symbol name
+
+[symbol.test.js](./__tests__/symbol.test.js)
+
+```javascript
+const { symbol, nameToUint64 } = require('eosjs-account-name');
+
+/**
+ * cleos -u https://eos.greymass.com get scope eosio.token -t stat
+ */
+const name = '........ehbo5';
+const uint64 = nameToUint64(name);
+const symbolName = symbol.toName(uint64);
+
+// expect(symbolName).toEqual('EOS');
 ```
 
 ## Note on random eosio name
