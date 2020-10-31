@@ -16,10 +16,7 @@ yarn add eosjs-account-name
 
 ## From name to uint64
 
-Here is [how eosio account name is computed to uint64](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/name.hpp#L21), I
-think node developer should have this function too :).
-
-[main.cpp](./examples/main.cpp) show how sample values are created.
+Here is [how eosio account name is computed to uint64](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/name.hpp#L21).
 
 ```text
 "eosio",
