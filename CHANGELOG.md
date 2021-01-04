@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/manh-vv/eosjs-name/compare/v2.2.0...v2.2.1) (2021-01-04)
+
+
+### Bug Fixes
+
+* :green_heart: fix public for including the lib for front-end side ([132070a](https://github.com/manh-vv/eosjs-name/commit/132070ab35fa92ec789194d92c4151397c658e4b))
+
 ## [2.2.0](https://github.com/manh-vv/eosjs-name/compare/v2.1.1...v2.2.0) (2021-01-04)
 
 
