@@ -14,6 +14,13 @@ npm i eosjs-account-name
 yarn add eosjs-account-name
 ```
 
+```html
+<!-- lib name is: eosjsName -->
+<script src="https://cdn.jsdelivr.net/npm/eosjs-account-name@2.2.1/lib/index.js"></script>
+```
+
+Example of browser is in [index.html](./docs/index.html).
+
 ## From name to uint64
 
 Here is [how eosio account name is computed to uint64](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/name.hpp#L21).

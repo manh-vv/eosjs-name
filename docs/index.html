@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/eosjs-account-name@2.2.1/lib/index.js" id="id-sc-include-js"></script>
 
   <style>
     body {
@@ -27,11 +29,7 @@
         <h1>Hello <i>eosjsName</i></h1>
 
         <h2>Import the script</h2>
-        <pre>
-          <code class="lang-html">
-            &lt;script src="../lib/index.js"&gt;&lt;/script&gt;
-          </code>
-        </pre>
+        <pre><code id="id-code-include-js" class="lang-html"></code></pre>
 
         <p>After import, the library name is <b>eosjsName</b>.</p>
 
@@ -74,8 +72,6 @@
     </div>
   </div>
 
-  <script src="../lib/index.js"></script>
-
   <script id="id-sc-nameToUint64">
     document.getElementById('id-nameToUint64').innerHTML = eosjsName.nameToUint64('eosio');
   </script>
@@ -95,6 +91,10 @@
   s
   <script>
     // show highlighted code snippets
+
+    document.getElementById('id-code-include-js').innerText = document.getElementById(
+      'id-sc-include-js',
+    ).outerHTML;
 
     document.getElementById('id-code-nameToUint64').innerText = document.getElementById(
       'id-sc-nameToUint64',
