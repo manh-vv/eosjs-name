@@ -1,6 +1,6 @@
 {
   "name": "eosjs-account-name",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "eos name in string to uint64 and vice versa",
   "main": "src/index.js",
   "files": [
