@@ -4,7 +4,8 @@
   "description": "eos name in string to uint64 and vice versa",
   "main": "src/index.js",
   "files": [
-    "src"
+    "src",
+    "lib"
   ],
   "author": "manh.vv.htth@gmail.com",
   "license": "MIT",
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "build": "yarn webpack",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "release": "standard-version",
     "test": "jest"
   },
