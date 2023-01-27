@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/manh-vv/eosjs-name/compare/v2.2.1...v2.3.0) (2023-01-27)
+
+
+### Features
+
+* [#29](https://github.com/manh-vv/eosjs-name/issues/29) support typescript ([ebeedc3](https://github.com/manh-vv/eosjs-name/commit/ebeedc3365402a69fb83c3bf6f9bbb8800141a0f))
+
 ### [2.2.1](https://github.com/manh-vv/eosjs-name/compare/v2.2.0...v2.2.1) (2021-01-04)
 
 
