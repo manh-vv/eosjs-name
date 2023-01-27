@@ -1,7 +1,7 @@
 const { char_to_symbol } = require('./char_to_symbol');
 
 /**
- * convert string to create ID in EOS smart contract
+ * Convert string to create ID in EOS smart contract.
  * @param {String} s
  * @return string to uint64 is not fit to js number, the return value is string format
  */

@@ -1,6 +1,6 @@
 /**
  * https://github.com/EOSIO/eos/blob/0d87dff8bee56179aa01472dd00a089b2aa7b9fa/libraries/chain/include/eosio/chain/symbol.hpp#L104
- * @param value is string reprenting the value of a uint64
+ * @param {String} value is string reprenting the value of a uint64
  */
 exports.toName = (value) => {
   let v = BigInt.asUintN(64, value);

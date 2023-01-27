@@ -1,4 +1,4 @@
-const { char_to_symbol } = require('../src');
+const { char_to_symbol } = require('../dist');
 
 const charMap = '.12345abcdefghijklmnopqrstuvwxyz';
 

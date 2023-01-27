@@ -1,5 +1,10 @@
 const charMap = '.12345abcdefghijklmnopqrstuvwxyz';
 
+/**
+ * Convert from given Uint64 to a EOS's name format.
+ * @param {String} value A string represents uint64
+ * @returns
+ */
 exports.uint64ToName = (value) => {
   const str = [];
 

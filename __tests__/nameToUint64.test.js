@@ -1,4 +1,4 @@
-const { nameToUint64 } = require('../src');
+const { nameToUint64 } = require('../dist');
 
 describe('test name to uint64', () => {
   it('should transfrom `eosio` to `6138663577826885632`', () => {
