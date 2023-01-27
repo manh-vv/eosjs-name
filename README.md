@@ -16,7 +16,7 @@ yarn add eosjs-account-name
 
 ```html
 <!-- lib name is: eosjsName -->
-<script src="https://cdn.jsdelivr.net/npm/eosjs-account-name@2.2.1/lib/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/eosjs-account-name@2.3.0/lib/index.js"></script>
 ```
 
 Example of browser is in [index.html](./docs/index.html).
