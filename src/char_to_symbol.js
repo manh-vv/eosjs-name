@@ -1,3 +1,8 @@
+/**
+ * Convert a charactor to a preset charactor
+ * @param {String|Number} c
+ * @returns
+ */
 exports.char_to_symbol = (c) => {
   if (typeof c == 'string') c = c.charCodeAt(0);
 

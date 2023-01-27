@@ -1,4 +1,4 @@
-const { symbol, nameToUint64 } = require('../src');
+const { symbol, nameToUint64 } = require('../dist');
 
 describe('test symbol name', () => {
   it('EOS symbol', () => {

@@ -2,11 +2,12 @@
   "name": "eosjs-account-name",
   "version": "2.2.1",
   "description": "eos name in string to uint64 and vice versa",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "files": [
-    "src",
+    "dist",
     "lib"
   ],
+  "types": "dist/index.d.ts",
   "author": "manh.vv.htth@gmail.com",
   "license": "MIT",
   "repository": "https://github.com/manh-vv/eosjs-name.git",
@@ -24,13 +25,17 @@
     "lint-staged": "^10.4.2",
     "prettier": "^2.1.2",
     "standard-version": "^9.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
   },
   "scripts": {
-    "build": "yarn webpack",
+    "build-tsc": "yarn tsc",
+    "build": "yarn build-tsc && yarn webpack",
     "prepare": "yarn build",
     "release": "standard-version",
+    "pretest": "yarn build-tsc",
     "test": "jest"
   },
   "lint-staged": {
